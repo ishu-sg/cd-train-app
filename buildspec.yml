@@ -1,13 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo installing nodejs...
-      - curl -fsSL https://nodejs.org/dist/v12.22.12/node-v12.22.12-linux-x64.tar.xz -o node.tar.xz
-      - mkdir -p /usr/local/lib/nodejs
-      - tar -xJf node.tar.xz -C /usr/local/lib/nodejs
-      - export PATH=/usr/local/lib/nodejs/node-v12.22.12-linux-x64/bin:$PATH
   pre_build:
     commands:
       - echo installing dependencies...
